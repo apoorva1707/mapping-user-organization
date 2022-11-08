@@ -4,11 +4,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 @NoArgsConstructor
 @Data
-public class HallTicket {
-    private Integer hallTicketNumber;
-    private Integer roomNumber;
+public class Course {
+
+    private Integer courseId;
+    private String courseName;
+
 }
